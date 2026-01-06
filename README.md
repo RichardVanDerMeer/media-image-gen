@@ -15,12 +15,6 @@ A Python CLI tool that generates visualizations of book pages in specific styles
 1. Install dependencies:
 
 ```bash
-pip install -e .
-```
-
-Or using uv:
-
-```bash
 uv sync
 ```
 

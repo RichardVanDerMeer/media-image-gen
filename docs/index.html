@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Image Generator - Bringing Literature to Life with AI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            border-bottom: 3px solid #4a90e2;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            font-weight: normal;
+        }
+        
+        .meta {
+            color: #95a5a6;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+        
+        article {
+            margin-top: 2rem;
+        }
+        
+        h2 {
+            color: #34495e;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        h3 {
+            color: #34495e;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.3rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 1rem;
+            border-left: 4px solid #ffc107;
+            margin: 1.5rem 0;
+        }
+        
+        .github-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.75rem 1.5rem;
+            background: #24292e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .github-link:hover {
+            background: #2f363d;
+        }
+        
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #95a5a6;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Book Image Generator</h1>
+            <p class="subtitle">Bringing Literature to Life with AI-Powered Visualizations</p>
+            <p class="meta">Published: January 2025</p>
+        </header>
+        
+        <article>
+            <p>
+                Have you ever wondered what a scene from your favorite book would look like as a visual illustration? 
+                The <strong>Book Image Generator</strong> is a Python CLI tool that transforms literary text into 
+                stunning visual representations using Google's Gemini AI. Whether you're a book lover, educator, 
+                or creative professional, this tool opens up new possibilities for visualizing narrative content.
+            </p>
+            
+            <h2>What It Does</h2>
+            
+            <p>
+                The Book Image Generator takes a book title and text content, then creates beautiful, stylized 
+                images that capture the essence of the scene. It intelligently extracts keywords from book titles 
+                to understand the setting and atmosphere, combines this with the actual text content, and applies 
+                customizable artistic styles to generate unique visualizations.
+            </p>
+            
+            <div class="highlight">
+                <strong>Key Features:</strong>
+                <ul>
+                    <li>Automatic keyword extraction from book titles</li>
+                    <li>Multiple preset styles (watercolor, hand-drawn, narrative illustration, etc.)</li>
+                    <li>Customizable aspect ratios and image sizes</li>
+                    <li>Interactive prompt preview before generation</li>
+                    <li>Auto-generated filenames with timestamps</li>
+                </ul>
+            </div>
+            
+            <h2>How It Works</h2>
+            
+            <p>
+                The process is elegantly simple yet powerful:
+            </p>
+            
+            <ol>
+                <li><strong>Keyword Extraction</strong>: The tool uses Gemini Pro to analyze the book title and extract 
+                    relevant keywords that capture the setting, atmosphere, and themes.</li>
+                
+                <li><strong>Prompt Construction</strong>: It combines the book title, extracted keywords, text content, 
+                    and selected style preset into a rich, descriptive prompt that guides the AI.</li>
+                
+                <li><strong>Style Application</strong>: Preset styles (defined in YAML files) provide detailed artistic 
+                    guidelines including lighting, color palettes, camera angles, and base style descriptions.</li>
+                
+                <li><strong>Image Generation</strong>: Gemini 3 Pro Image Preview generates the final image based on 
+                    the carefully constructed prompt and style instructions.</li>
+            </ol>
+            
+            <h2>Example Usage</h2>
+            
+            <p>
+                Here's how you would use it to generate an image for a book page:
+            </p>
+            
+            <pre><code>python main.py generate \
+  --title "A Day in the Life of Ivan Denisovich" \
+  --text-file sample_page.txt \
+  --style watercolor</code></pre>
+            
+            <p>
+                The tool will extract keywords, show you a preview of the prompt it will use, ask for confirmation, 
+                and then generate the image. The output is automatically saved with a descriptive filename like 
+                <code>a_day_in_the_life_of_ivan_denisovich_20250106_143022.jpg</code>.
+            </p>
+            
+            <h2>Customizable Styles</h2>
+            
+            <p>
+                One of the most powerful features is the preset system. You can create custom artistic styles by 
+                defining YAML files that specify:
+            </p>
+            
+            <ul>
+                <li>Base style description (e.g., "Watercolor illustration, soft edges, muted colors")</li>
+                <li>Lighting conditions</li>
+                <li>Color palettes</li>
+                <li>Camera angles and perspectives</li>
+                <li>Artistic accents</li>
+            </ul>
+            
+            <p>
+                This allows you to maintain visual consistency across multiple images or experiment with different 
+                artistic interpretations of the same text.
+            </p>
+            
+            <h2>Technical Details</h2>
+            
+            <p>
+                Built with Python 3.10+ and leveraging Google's Gemini API, the tool is designed to be both powerful 
+                and user-friendly. It supports various aspect ratios (1:1, 2:3, 3:4, 16:9, etc.) and image sizes 
+                (1K, 2K, 4K), giving you control over the final output format.
+            </p>
+            
+            <h2>Use Cases</h2>
+            
+            <p>
+                This tool is perfect for:
+            </p>
+            
+            <ul>
+                <li><strong>Book bloggers and reviewers</strong>: Create visual content to accompany book reviews</li>
+                <li><strong>Educators</strong>: Generate illustrations for teaching literature</li>
+                <li><strong>Content creators</strong>: Produce unique artwork for social media or websites</li>
+                <li><strong>Book clubs</strong>: Visualize scenes during discussions</li>
+                <li><strong>Personal projects</strong>: Create custom artwork for favorite passages</li>
+            </ul>
+            
+            <h2>Getting Started</h2>
+            
+            <p>
+                To get started, you'll need:
+            </p>
+            
+            <ol>
+                <li>A Gemini API key from <a href="https://makersuite.google.com/app/apikey" target="_blank">Google AI Studio</a></li>
+                <li>Python 3.10+ installed</li>
+                <li>The project dependencies (install with <code>uv sync</code>)</li>
+            </ol>
+            
+            <p>
+                Once set up, you can start generating beautiful visualizations of your favorite literary passages 
+                in minutes!
+            </p>
+            
+            <h2>Conclusion</h2>
+            
+            <p>
+                The Book Image Generator bridges the gap between text and visual art, making it easier than ever 
+                to create compelling illustrations from literary content. With its flexible preset system and 
+                intelligent prompt construction, it's a powerful tool for anyone looking to visualize the worlds 
+                described in books.
+            </p>
+            
+            <p>
+                Whether you're creating content for a blog, preparing educational materials, or simply exploring 
+                the visual potential of literature, this tool provides an accessible way to bring words to life 
+                through AI-generated imagery.
+            </p>
+            
+            <a href="https://github.com/yourusername/book-image-gen" class="github-link" target="_blank">
+                View on GitHub →
+            </a>
+        </article>
+        
+        <footer>
+            <p>Book Image Generator - Open Source Project</p>
+            <p>Powered by Google Gemini AI</p>
+        </footer>
+    </div>
+</body>
+</html>
+
