@@ -1,0 +1,8 @@
+name: watercolor
+prompt:
+  base: |
+    Watercolor illustration, soft edges, muted colors,
+    painterly texture, paper grain visible
+  lighting: soft natural light
+  color_palette: pastel blues and earth tones
+  camera: wide shot

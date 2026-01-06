@@ -1,0 +1,30 @@
+name: restrained_narrative_illustration
+prompt:
+  base: |
+    Hand-drawn narrative illustration,
+    quiet realism, observational tone,
+    focus on human presence and expression,
+    understated emotion rather than dramatization
+  style:
+    - watercolor wash
+    - ink and graphite linework
+    - soft, imperfect edges
+  lighting: diffuse, even lighting with no strong highlights
+  color_palette:
+    - paper off-white
+    - warm grey
+    - cool grey
+    - muted earth tones
+    - soft charcoal
+  accents:
+    - subdued skin tones
+    - desaturated warm highlights
+  texture:
+    - visible paper grain
+    - watercolor bleed
+    - light pencil shading
+  composition:
+    - balanced crowding
+    - shallow to moderate depth
+    - natural, unforced arrangement of figures
+  camera: eye-level wide shot

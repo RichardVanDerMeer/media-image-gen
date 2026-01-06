@@ -1,0 +1,25 @@
+name: hand_drawn_winter_wash
+prompt:
+  base: |
+    Hand-drawn illustration, watercolor wash,
+    visible paper texture, soft pencil outlines,
+    low saturation, gentle gradients
+    Bleak atmosphere, desaturated tones,
+    cold and austere mood, emphasis on material hardship
+  lighting: diffuse winter light, no hard shadows
+  color_palette:
+    - paper off-white
+    - warm fog grey
+    - cold blue-grey
+    - pale taupe
+    - faded olive green
+    - charcoal black
+    - washed sage green
+    - soft charcoal
+  accents:
+    - diluted umber (ink/pencil depth)
+  texture:
+    - watercolor bleed
+    - paper grain
+    - light graphite strokes
+  camera: wide shot
