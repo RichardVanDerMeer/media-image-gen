@@ -1,4 +1,4 @@
-"""Preset loading and parsing logic for book image generation styles."""
+"""Preset loading and parsing logic for media image generation styles."""
 
 import os
 import yaml

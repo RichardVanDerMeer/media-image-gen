@@ -1,13 +1,13 @@
 [project]
-name = "book-image-gen"
+name = "media-image-gen"
 version = "0.1.0"
-description = "A Python CLI tool that generates visualizations of book pages in specific styles or themes"
+description = "A Python CLI tool that generates visualizations for books, films, and music tracks in specific styles or themes"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "click>=8.0.0",
-    "google-genai>=0.2.0",
-    "python-dotenv>=1.0.0",
-    "pyyaml>=6.0.0",
-    "questionary>=2.0.0",
+	"click>=8.0.0",
+	"google-genai>=0.2.0",
+	"python-dotenv>=1.0.0",
+	"pyyaml>=6.0.0",
+	"questionary>=2.0.0",
 ]
