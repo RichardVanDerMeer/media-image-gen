@@ -1,0 +1,14 @@
+name: poetic_realism
+description: Poetic literary illustration with dreamlike atmosphere and gentle emotional tone
+prompt:
+  base: |
+    Poetic literary illustration with a sense of memory and continuity,
+    realistic yet dreamlike atmosphere, gentle emotional tone,
+    subtle symbolism through nature, air and water interwoven,
+    timeless feeling, refined and contemplative, not surreal, not cartoonish
+  lighting: soft diffused daylight, hazy glow, light filtered through air and mist
+  color_palette:
+    muted earth tones, soft blues and greens, warm sand and clay hues,
+    pale sky whites, low saturation, watercolor-like transitions
+  texture: fine paper grain, gentle brush textures, flowing edges, organic transitions
+  camera: wide to medium framing, eye-level perspective, deep depth of field

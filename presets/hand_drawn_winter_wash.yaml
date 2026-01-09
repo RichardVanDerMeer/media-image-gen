@@ -1,4 +1,5 @@
 name: hand_drawn_winter_wash
+description: Hand-drawn illustration with watercolor wash, bleak winter atmosphere and desaturated tones
 prompt:
   base: |
     Hand-drawn illustration, watercolor wash,

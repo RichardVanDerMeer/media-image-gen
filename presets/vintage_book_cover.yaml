@@ -1,0 +1,10 @@
+name: vintage_book_cover
+description: Classic vintage book cover design with retro typography and worn texture
+prompt:
+  base: |
+    Vintage book cover illustration, 1950s-1970s aesthetic,
+    worn paper texture, slightly faded colors, classic typography,
+    nostalgic atmosphere, hand-painted feel, subtle grain
+  lighting: soft even lighting with slight vignette
+  color_palette: muted oranges, yellows, teals, and browns, aged paper tones
+  camera: centered composition, flat illustration style

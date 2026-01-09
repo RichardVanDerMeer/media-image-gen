@@ -1,4 +1,5 @@
 name: watercolor
+description: Soft watercolor illustration with muted colors and painterly textures
 prompt:
   base: |
     Watercolor illustration, soft edges, muted colors,

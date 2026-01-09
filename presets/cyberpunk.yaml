@@ -1,0 +1,10 @@
+name: cyberpunk
+description: Futuristic cyberpunk aesthetic with neon lights and urban dystopia
+prompt:
+  base: |
+    Cyberpunk illustration, neon-lit urban dystopia, high-tech low-life aesthetic,
+    holographic elements, rain-slicked streets, futuristic cityscape,
+    digital glitches, dystopian atmosphere, tech noir mood
+  lighting: neon lighting, glowing signs, harsh artificial lights, dramatic backlighting
+  color_palette: electric pinks, cyan blues, toxic greens, deep purples, neon accents
+  camera: wide urban shots or close-up details, dutch angles

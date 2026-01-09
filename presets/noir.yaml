@@ -1,0 +1,10 @@
+name: noir
+description:
+prompt:
+  base: |
+    Gritty psychological thriller illustration, 1980s paperback cover vibe,
+    claustrophobic interior, subtle film-grain texture, sharp details,
+    ominous mood, tension in the scene, realistic proportions, no stylization to cartoon
+  lighting: cold overcast winter light, strong shadows, practical lamp glow as secondary light
+  color_palette: desaturated blues and grays, dirty whites, muted browns, small accents of sickly yellow
+  camera: medium close-up, slightly low angle, shallow depth of field

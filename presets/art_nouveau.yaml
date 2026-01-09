@@ -1,0 +1,10 @@
+name: art_nouveau
+description: Art Nouveau style with organic flowing lines and decorative floral elements
+prompt:
+  base: |
+    Art Nouveau illustration, flowing organic lines, decorative borders,
+    floral and nature motifs, elegant curves, intricate patterns,
+    belle époque aesthetic, ornamental details, graceful composition
+  lighting: soft diffused light with golden glow
+  color_palette: rich jewel tones, golds, deep greens, burgundy, muted pastels
+  camera: decorative frame composition, central focus

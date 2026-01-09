@@ -1,4 +1,5 @@
 name: restrained_narrative_illustration
+description: Hand-drawn narrative illustration with quiet realism and understated emotion
 prompt:
   base: |
     Hand-drawn narrative illustration,

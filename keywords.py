@@ -1,4 +1,4 @@
-"""Keyword extraction using regular Gemini model."""
+"""Keyword extraction for books, films, and music tracks using Gemini model."""
 
 import os
 from typing import List, Optional
@@ -6,16 +6,17 @@ from google import genai
 from google.genai import types
 
 
-def extract_keywords(book_title: str, api_key: Optional[str] = None) -> List[str]:
+def extract_keywords(title: str, api_key: Optional[str] = None, media_type: str = "book") -> List[str]:
     """
-    Extract keywords related to a book title using Gemini API.
+    Extract keywords related to a media title using Gemini API.
 
     Args:
-        book_title: The title of the book
+        title: The title of the book, film, or music track
         api_key: Gemini API key (if None, uses GEMINI_API_KEY from environment)
+        media_type: Type of media (book, film, or music)
 
     Returns:
-        List of keyword strings extracted from the book title
+        List of keyword strings extracted from the title
 
     Raises:
         ValueError: If API key is not provided and not in environment
@@ -31,10 +32,24 @@ def extract_keywords(book_title: str, api_key: Optional[str] = None) -> List[str
 
     client = genai.Client(api_key=api_key)
 
-    system_instruction = (
+    # Customize system instruction based on media type
+    media_instructions = {
+        "book": "You are an AI agent that responds with a list of words / topics that are "
+                "related to a given book title. The responses will help another AI Agent "
+                "generate an image of the setting / atmosphere of that specific book.",
+        "film": "You are an AI agent that responds with a list of words / topics that are "
+                "related to a given film title. The responses will help another AI Agent "
+                "generate an image that captures the cinematic mood, setting, and atmosphere of that film.",
+        "music": "You are an AI agent that responds with a list of words / topics that are "
+                 "related to a given music track title. The responses will help another AI Agent "
+                 "generate an image that visualizes the mood, energy, and atmosphere of that music track."
+    }
+
+    system_instruction = media_instructions.get(
+        media_type.lower(),
         "You are an AI agent that responds with a list of words / topics that are "
-        "related to a given book title, the responses will help another AI Agent "
-        "generate an image of the setting / atmosphere of that specific book"
+        "related to a given title, the responses will help another AI Agent "
+        "generate an image of the setting / atmosphere"
     )
 
     try:
@@ -43,7 +58,7 @@ def extract_keywords(book_title: str, api_key: Optional[str] = None) -> List[str
             contents=[
                 types.Content(
                     role="user",
-                    parts=[types.Part.from_text(text=book_title)],
+                    parts=[types.Part.from_text(text=title)],
                 ),
             ],
             config=types.GenerateContentConfig(

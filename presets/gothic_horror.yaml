@@ -1,0 +1,10 @@
+name: gothic_horror
+description: Dark gothic horror atmosphere with Victorian elements and eerie mood
+prompt:
+  base: |
+    Gothic horror illustration, Victorian-era atmosphere, dark and foreboding,
+    ornate details, mysterious shadows, haunting mood,
+    classic horror aesthetic, dramatic contrasts, ominous presence
+  lighting: candlelight, moonlight through fog, deep shadows with selective highlights
+  color_palette: deep purples, midnight blues, blood reds, charcoal blacks, sickly greens
+  camera: low angle or high angle for dramatic effect, atmospheric depth

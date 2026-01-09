@@ -1,0 +1,10 @@
+name: expressionist
+description: Emotional expressionist style with distorted forms and intense colors
+prompt:
+  base: |
+    Expressionist illustration, emotional intensity, distorted perspectives,
+    bold brushstrokes, heightened colors, psychological depth,
+    subjective reality, dramatic mood, raw emotional power
+  lighting: unnatural lighting, dramatic contrasts, exaggerated shadows
+  color_palette: intense saturated colors, jarring contrasts, symbolic color use
+  camera: distorted angles, emotional perspective, non-naturalistic composition

@@ -89,3 +89,33 @@ def get_preset_components(preset: Dict) -> Dict[str, str]:
         "camera": prompt.get("camera", "").strip(),
         "accents": accents.strip(),
     }
+
+
+def list_available_presets(presets_dir: str = "presets") -> list[Dict]:
+    """
+    List all available preset files with their names and descriptions.
+
+    Args:
+        presets_dir: Directory containing preset files (default: "presets")
+
+    Returns:
+        List of dictionaries with keys: filename, name, description
+    """
+    presets_path = Path(presets_dir)
+    if not presets_path.exists():
+        return []
+
+    available_presets = []
+    for yaml_file in presets_path.glob("*.yaml"):
+        try:
+            preset = load_preset(yaml_file.stem, presets_dir)
+            available_presets.append({
+                "filename": yaml_file.stem,
+                "name": preset.get("name", yaml_file.stem),
+                "description": preset.get("description", "No description available"),
+            })
+        except Exception:
+            # Skip invalid preset files
+            continue
+
+    return sorted(available_presets, key=lambda x: x["name"])

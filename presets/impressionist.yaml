@@ -1,0 +1,10 @@
+name: impressionist
+description: Impressionist painting style with loose brushwork and vibrant light effects
+prompt:
+  base: |
+    Impressionist painting style, visible brushstrokes, emphasis on light and color,
+    loose painterly technique, atmospheric effects, captures fleeting moments,
+    natural outdoor scenes, luminous quality, soft edges
+  lighting: natural sunlight, dappled light through trees, golden hour glow
+  color_palette: bright pure colors, complementary color contrasts, luminous whites
+  camera: plein air composition, focus on light and atmosphere

@@ -1,0 +1,10 @@
+name: soviet_propaganda
+description: Bold Soviet propaganda poster style with heroic composition and strong graphics
+prompt:
+  base: |
+    Soviet propaganda poster illustration, bold graphic design, heroic figures,
+    constructivist elements, socialist realism influence, powerful composition,
+    striking typography integration, idealized forms, strong symbolic imagery
+  lighting: dramatic lighting emphasizing heroism, strong directional light
+  color_palette: bold reds, blacks, whites, yellows, limited palette for impact
+  camera: low angle heroic shots, dynamic diagonal compositions, monumental scale

@@ -1,0 +1,10 @@
+name: pulp_fiction
+description: Dramatic pulp fiction paperback style with bold colors and action-oriented composition
+prompt:
+  base: |
+    Pulp fiction paperback illustration, dramatic poses, bold outlines,
+    sensational atmosphere, vintage paperback aesthetic, dynamic composition,
+    slightly exaggerated proportions, commercial illustration style
+  lighting: dramatic spotlighting, strong contrasts, noir shadows
+  color_palette: vibrant reds, electric blues, hot pinks, deep blacks, saturated colors
+  camera: dynamic angle, eye-catching composition

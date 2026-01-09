@@ -1,0 +1,10 @@
+name: art_deco
+description: Elegant Art Deco style with geometric patterns and luxurious glamour
+prompt:
+  base: |
+    Art Deco illustration, geometric patterns, streamlined forms, luxurious aesthetic,
+    symmetrical composition, bold angular shapes, glamorous 1920s-1930s style,
+    sophisticated elegance, metallic accents, stylized figures
+  lighting: dramatic theatrical lighting, spotlight effects, metallic reflections
+  color_palette: gold, silver, black, cream, rich jewel tones, high contrast
+  camera: symmetrical composition, emphasis on vertical lines and geometric shapes

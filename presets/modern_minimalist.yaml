@@ -1,0 +1,10 @@
+name: modern_minimalist
+description: Clean modern minimalist design with bold typography and negative space
+prompt:
+  base: |
+    Modern minimalist illustration, clean lines, bold shapes,
+    sophisticated use of negative space, geometric elements,
+    contemporary design, refined aesthetic, high contrast
+  lighting: bright even lighting, no shadows
+  color_palette: monochromatic or limited color palette, bold accent colors
+  camera: graphic design composition, balanced layout
